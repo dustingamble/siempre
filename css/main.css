@@ -165,7 +165,7 @@ main {
 	.hsContent h2  {
 		color: #ffffff;
         text-transform: uppercase;
-        padding: 10px 5px;
+        padding: 0px 5px;
         font-size: 47px;
         line-height: 44px;
         margin-bottom: 12px;
@@ -211,7 +211,7 @@ main {
 #slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
 #slide-2 .hsContent {
 	margin-left: -450px;
-	bottom: 200px;
+	bottom: 150px;
 	top: auto;
 }
     #slide-2 img {
@@ -232,20 +232,23 @@ main {
 #slide-3 .hsContent {
 	margin-left: -239px;
 }
-	#slide-3 h2 {
-			/*	background-color: rgba(0,0,0,0.6);*/
+	#slide-3 img {
+		width:100%;
 	}
 
 /* Slide 4 */
 #slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
 #slide-4 .hsContent {
-	margin-left: -450px;
+	margin-left: -239px;
 }
 	#slide-4 h2 {
 		background: none;
 		padding-left: 0;
 		padding-right: 0;
 	}
+    #slide-4 img {
+        width:100%;
+    }
 
 
 /* Slide 5 */
@@ -258,6 +261,10 @@ main {
         padding-left: 0;
         padding-right: 0;
     }
+    #slide-5 img {
+        width:100%;
+    }
+
 
 
 /* Slide 6 */
