@@ -1,3 +1,18 @@
+// moonshiner fonts
+
+@font-face {
+    font-family: 'moonshinerround';
+    src: url('../fonts/moonshiner-round-webfont.eot');
+    src: url('../fonts/moonshiner-round-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/moonshiner-round-webfont.woff2') format('woff2'),
+         url('../fonts/moonshiner-round-webfont.woff') format('woff'),
+         url('../fonts/moonshiner-round-webfont.ttf') format('truetype'),
+         url('../fonts/moonshiner-round-webfont.svg#moonshinerround') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -98,6 +113,7 @@ body {
 }
 h2 {
 	margin-top: 0;
+    font-family: 'moonshinerround';
 }
 .loading {
 	background: url('../img/ico_loading.gif') no-repeat center center;
@@ -172,11 +188,11 @@ main {
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
 #slide-1 .hsContent {
-	bottom: 200px;
+	bottom: 30px;
 	top: auto;
     left:10%;
 }
-    #slide-1 img {
+    #slide-1 img.bottle {
     vertical-align: middle;
     position: absolute;
     right: 100px;
@@ -186,6 +202,9 @@ main {
     #slide-1 h2{
         font-size:100px;
         line-height: 1;
+    }
+    img.thisIs {
+        width:120%;
     }
 
 /* Slide 2 */
@@ -197,6 +216,15 @@ main {
 }
     #slide-2 img {
         width:175%;
+    }
+    #slide-2 h2{
+        position:relative;
+    }
+    #slide-2 img.alwaysBottle {
+    position: absolute;
+    bottom: 11px;
+    width: 190px;
+    left: 86%;
     }
 
 /* Slide 3 */
