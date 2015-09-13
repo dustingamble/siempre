@@ -218,6 +218,9 @@ main {
     #slide-2 img {
         width:175%;
     }
+    .hideme{
+        display: none;
+    }
     #slide-2 h2{
         position:relative;
     }
