@@ -5,10 +5,6 @@ $('#third').delay(1600).fadeIn(3500);
 
 });
 
-$(window).load(function() {
-    
-
-});
 
 $(document).ready(function() {
     
@@ -25,7 +21,10 @@ $(document).ready(function() {
             if( bottom_of_window > bottom_of_object ){
                 
                 $(this).animate({'opacity':'1'},500);
-                      $('#thisIs').delay(100).fadeIn(1500);
+                      $('.thisIs').delay(100).fadeIn(2500);
+                         //  // $(".alwaysBottle").delay(100).slideUp();
+                      $('.always').delay(100).fadeIn(2500);
+                      //  // $(".alwaysBottle").delay(100).slideUp();
 
                     
             }

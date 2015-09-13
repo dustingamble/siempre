@@ -179,6 +179,10 @@ main {
 		text-decoration: underline;
 	}
 
+.hideme{
+    display: none;
+}
+
 /* Slide 0 */
 /*#slide-0 .bcg {background-image:url('../img/bcg_slide-0.jpg')}*/
 /*#slide-0 .bcg {background-image:url('../img/bcg_slide-0.jpg')}*/
@@ -218,9 +222,6 @@ main {
     #slide-2 img {
         width:175%;
     }
-    .hideme{
-        display: none;
-    }
     #slide-2 h2{
         position:relative;
     }
@@ -228,7 +229,7 @@ main {
     position: absolute;
     bottom: 11px;
     width: 190px;
-    left: 86%;
+    left: 86%;`
     }
 
 /* Slide 3 */
@@ -239,6 +240,7 @@ main {
 	#slide-3 img {
 		width:100%;
 	}
+
 
 /* Slide 4 */
 #slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
