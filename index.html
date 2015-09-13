@@ -13,18 +13,15 @@
 		<link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
 
 
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+        <script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
           <script src="js/animations.js"></script>
-          	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
-          	<script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
-
-          	<script type="text/javascript">
-    		    $(".bg").interactive_bg();
-		      </script>
 
     </head>
     <body class="loading">
@@ -47,7 +44,17 @@
 		        			
 
 					<div class="logo">
-							<img src="img/logo.png" class="siempreLogo">
+							<div id="first">
+								<img src="img/logo.png" class="siempreLogo">
+							</div>
+							    
+							<div id="second">
+								<img src="img/logo.png" class="siempreLogo">
+							</div>    
+
+							<div id="third">
+								<img src="img/logo.png" class="siempreLogo">
+							</div>
 					</div>
 						
 				    
@@ -135,11 +142,17 @@
 		    
 		</main>
 
+		   	<script type="text/javascript">
+    		    $(".bg").interactive_bg();
+		    </script>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/imagesloaded.js"></script>
         <script src="js/skrollr.js"></script>
         <script src="js/_main.js"></script>
+
+
 
     </body>
 </html>
