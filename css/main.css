@@ -315,19 +315,19 @@ body, html {
 }
 
 
-.demo5 .bg {
+.bg {
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 0;
 }
 
- .menu {
-  position: relative;
-  top:20%;
-}
-img.logo {
+img.siempreLogo {
   width:500px;
+}
+.logo {
+    position: relative;
+  top:20%;
 }
 
 .demo5 .ibg-bg {
