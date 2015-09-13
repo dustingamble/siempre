@@ -181,7 +181,7 @@ main {
 
 /* Slide 0 */
 /*#slide-0 .bcg {background-image:url('../img/bcg_slide-0.jpg')}*/
-#slide-0 .bcg {background-image:url('../img/bcg_slide-0.jpg')}
+/*#slide-0 .bcg {background-image:url('../img/bcg_slide-0.jpg')}*/
 #slide-0 .hsContent {
     bottom: 200px;
     top: auto;
@@ -327,14 +327,28 @@ img.siempreLogo {
   width:500px;
 }
 .logo {
-    position: relative;
+    position: absolute;
   top:20%;
+    right: 0;
+    left: 0;
 }
 
-.demo5 .ibg-bg {
-  position: absolute;
+.ibg-bg {
+  position: fixed;
 }
 
+/*#first {
+    display: none;
+}
+
+#second {
+    display: none;
+}
+
+#third {
+    display: none;
+}
+*/
 
 
 
