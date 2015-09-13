@@ -180,7 +180,7 @@ main {
 	}
 
 /* Slide 0 */
-#slide-0 .bcg {background-image:url('../img/bcg_slide-0.jpg')}
+/*#slide-0 .bcg {background-image:url('../img/bcg_slide-0.jpg')}*/
 #slide-0 .hsContent {
     bottom: 200px;
     top: auto;
@@ -282,7 +282,7 @@ main {
 #slide-7 .bcg {
     background-image:url('../img/bcg_slide-7.jpg');
     background-position: center top;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     bottom: 0;
     width: 100%;
@@ -290,6 +290,50 @@ main {
 #slide-7 .hsContent {
     margin-left: -450px;
 }
+
+/*/////////////////////////////////////////////////////////////////////////////////////
+
+INTERACTIVE BACKGROUND
+
+/////////////////////////////////////////////////////////////////////////////////////
+*/
+
+body, html {
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      -webkit-transition: opacity 400ms;
+      -moz-transition: opacity 400ms;
+      transition: opacity 400ms;
+}
+
+
+.demo5 body {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+
+
+.demo5 .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+ .menu {
+  position: relative;
+  top:20%;
+}
+img.logo {
+  width:500px;
+}
+
+.demo5 .ibg-bg {
+  position: absolute;
+}
+
 
 
 
