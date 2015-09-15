@@ -14,38 +14,49 @@
 	$window = $(window);
 	$slide = $('.homeSlide');
 	$body = $('body');
+  $homeBg = $(".bg");
 	
-    //FadeIn all sections   
+  //FadeIn all sections
 	$body.imagesLoaded( function() {
 		setTimeout(function() {
-		      
-		      // Resize sections
-		      adjustWindow();
-		      
-		      // Fade in sections
-			  $body.removeClass('loading').addClass('loaded');
-			  
+
+      // Resize sections
+      adjustWindow();
+
+      // Fade in sections
+      $body.removeClass('loading').addClass('loaded');
+
+      bindResizeEvent();
+
 		}, 800);
+
+    $homeBg.interactive_bg();
 	});
+
+  function bindResizeEvent() {
+    $(window).on('resize', _.debounce(function() {
+      adjustWindow();
+      $homeBg.interactive_bg();
+    }));
+  }
 	
-	function adjustWindow(){
+	function adjustWindow() {
 		
 		// Init Skrollr
 		
 		
 		// Get window size
-	    winH = $window.height();
+    winH = $window.height();
 	    
-	    // Keep minimum height 550
-	    if(winH <= 550) {
+    // Keep minimum height 550
+    if(winH <= 550) {
 			winH = 550;
 		} 
 	    
-	    // Resize our slides
-	    $slide.height(winH);
-	    
-	    // Refresh Skrollr after resizing our sections
-	    
+    // Resize our slides
+    $slide.height(winH);
+
+    // Refresh Skrollr after resizing our sections
 	    
 	}
 		
