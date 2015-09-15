@@ -1,5 +1,4 @@
-// moonshiner fonts
-
+/* moonshiner fonts */
 @font-face {
     font-family: 'moonshinerround';
     src: url('../fonts/moonshiner-round-webfont.eot');
@@ -10,7 +9,6 @@
          url('../fonts/moonshiner-round-webfont.svg#moonshinerround') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -229,13 +227,15 @@ main {
     position: absolute;
     bottom: 11px;
     width: 190px;
-    left: 86%;`
+    left: 86%;
     }
 
 /* Slide 3 */
 #slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
 #slide-3 .hsContent {
-	margin-left: -239px;
+  max-width: 450px;
+  transform: translateX(-50%);
+  top: 5%;
 }
 	#slide-3 img {
 		width:100%;
@@ -245,7 +245,9 @@ main {
 /* Slide 4 */
 #slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
 #slide-4 .hsContent {
-	margin-left: -239px;
+  max-width: 450px;
+  transform: translateX(-50%);
+  top: 5%;
 }
 	#slide-4 h2 {
 		background: none;
@@ -253,14 +255,17 @@ main {
 		padding-right: 0;
 	}
     #slide-4 img {
-        width:100%;
+      width:100%;
     }
 
 
 /* Slide 5 */
 #slide-5 .bcg {background-image:url('../img/bcg_slide-5.jpg')}
 #slide-5 .hsContent {
-    margin-left: -450px;
+  max-width: 750px;
+  width: 750px;
+  transform: translateX(-50%);
+  top: 5%;
 }
     #slide-5 h2 {
         background: none;
@@ -276,7 +281,7 @@ main {
 /* Slide 6 */
 #slide-6 .bcg {background-image:url('../img/bcg_slide-6.jpg')}
 #slide-6 .hsContent {
-    margin-left: -450px;
+  transform: translateX(-50%);
 }
     #slide-6 h2 {
         background: none;
@@ -294,7 +299,7 @@ main {
     width: 100%;
 }
 #slide-7 .hsContent {
-    margin-left: -450px;
+  transform: translateX(-50%);
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////
