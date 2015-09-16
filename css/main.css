@@ -98,7 +98,8 @@ textarea {
 /* ==========================================================================
    Parallax Scroll
    ========================================================================== */
-body, html {
+body,
+html {
 	height: 100%;
 	min-height: 100%;
 	background-color: #000000;
@@ -111,10 +112,15 @@ body {
 }
 h2 {
 	margin-top: 0;
-    font-family: 'moonshinerround';
+  font-family: 'moonshinerround';
 }
 .loading {
 	background: url('../img/ico_loading.gif') no-repeat center center;
+}
+.title-slide,
+.slide {
+  width: 100%;
+  height: 100%;
 }
 section {
 	min-width: 960px;
@@ -127,9 +133,6 @@ section {
 	-moz-transition: opacity 300ms ease-out;
 	transition: opacity 300ms ease-out;
 }
-main {
-	overflow-x: hidden;
-}
 #preload {
 	width: 1px;
 	height: 1px;
@@ -137,6 +140,12 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+#trigger {
+  heigth: 1px;
+  position: fixed;
+  top: 50%;
+  left: 0;
 }
 .bcg {
 	background-position: center center;
