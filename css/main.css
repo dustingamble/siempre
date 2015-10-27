@@ -187,7 +187,27 @@ section {
 	}
 
 .hideme{
-    display: none;
+  display: none;
+}
+.fade {
+  opacity: 0;
+}
+
+h2 {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  -ms-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+h2.out {
+  opacity: 0 !important;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 /* Slide 0 */
@@ -208,36 +228,56 @@ section {
     vertical-align: middle;
     position: absolute;
     right: 100px;
-    bottom: -36px;
+    bottom: 20px;
     width: 300px;
     }
     #slide-1 h2{
-        font-size:100px;
-        line-height: 1;
+      font-size:100px;
+      line-height: 1;
     }
-    img.thisIs {
-        width:120%;
+    #slide-1 h2.out {
+    }
+    #slide-1 img.thisIs {
+      width: 120%;
+      opacity: 0;
+      position: relative;
     }
 
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
-#slide-2 .hsContent {
-	margin-left: -450px;
-	bottom: 150px;
-	top: auto;
-}
-    #slide-2 img {
-        width:175%;
-    }
-    #slide-2 h2{
-        position:relative;
-    }
-    #slide-2 img.alwaysBottle {
+  #slide-2 .layer,
+  #slide-2 .anchor {
+    width: 100%;
+    height: 100%;
+  }
+  #slide-2 .layer {
     position: absolute;
-    bottom: 11px;
-    width: 190px;
-    left: 86%;
-    }
+  }
+  #slide-2 .anchor {
+    position: relative;
+  }
+  #slide-2 .always-text {
+    transform: translate3d(0px, -100%, 0px);
+  }
+  #slide-2 .always-bottle {
+    transform: translate3d(0px, 100%, 0px);
+  }
+  #slide-2 img {
+    width: 75%;
+    max-width: 930px;
+  }
+  #slide-2 #always,
+  #slide-2 #alwaysBottle {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #slide-2 #alwaysBottle {
+    width: 16%;
+    max-width: 190px;
+    left: 58%;
+  }
 
 /* Slide 3 */
 #slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
@@ -248,6 +288,7 @@ section {
 }
 	#slide-3 img {
 		width:100%;
+    opacity: 0;
 	}
 
 
