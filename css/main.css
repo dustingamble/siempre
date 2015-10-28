@@ -351,6 +351,25 @@ h2.out {
 #slide-7 .hsContent {
   transform: translateX(-50%);
 }
+.footer {
+ /* height: 100px;*/
+  width:100%;
+  background-color:#000;
+}
+.footer ul{
+  display:inline-block;
+  list-style-type: none;
+}
+.footer li{
+  display: inline-block;
+  padding:0px 50px;
+}
+i.icon {
+  color:#f6eedb;
+}
+i.icon:hover {
+  color:#82c7c4;
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////
 
