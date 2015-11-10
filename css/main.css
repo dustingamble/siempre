@@ -532,15 +532,8 @@ img.siempreLogo {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
@@ -620,3 +613,72 @@ img.siempreLogo {
         page-break-after: avoid;
     }
 }
+
+/*
+/////////////
+
+media queries 
+
+/////////////*/
+
+@media screen and (max-width: 700px) {
+
+  section{
+    width:100%;
+    min-width:0;
+  }
+
+  img.siempreLogo {
+    width: 92%;
+  }
+
+  .title-slide, .slide {
+    height: 100%;
+  }
+
+  #slide-1 img.thisIs {
+      width: 35%;
+      opacity: 0;
+      position: relative;
+  }
+  #slide-1 img.bottle {
+    vertical-align: middle;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: 35%;
+  }
+  #slide-1 .hsContent {
+    bottom: 60px;
+    top: auto;
+    left: 1%;
+  }
+
+  #slide-2 .anchor {
+    width: 100%;
+    height: 100%;
+  }
+
+  #slide-5 img {
+      width: 50%;
+  }
+
+ .hsContent {
+  top:20%
+ }
+
+ .footer li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+
+
+
+
+
+} /*<--- end of query*/
+
+
+
+
