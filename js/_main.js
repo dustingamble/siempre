@@ -101,7 +101,7 @@ $(function() {
     inScene2
       .set('#slide-2 .always-text', {
         css: {
-          transform: 'translate3d(0px, -'+winHeight+'px, 0px)'
+          transform: 'translate3d(0px, 0px, 0px)'
         }
       })
       .set('#slide-2 .always-bottle', {
@@ -109,7 +109,7 @@ $(function() {
           transform: 'translate3d(0px, '+winHeight+'px, 0px)'
         }
       })
-      .add(TweenMax.fromTo("#slide-2 .always-text", .75, {
+      .add(TweenMax.fromTo("#slide-2 .always-bottle", .75, {
           css: {
             transform: 'translate3d(0px, -'+winHeight+'px, 0px)'
           },
@@ -121,46 +121,7 @@ $(function() {
           },
           ease: Power2.easeOut
         }
-      ), '-=1.5')
-      .add(TweenMax.fromTo("#slide-2 .always-text", .75, {
-          css: {
-            transform: 'translate3d(0px, 0px, 0px)'
-          },
-          ease: Power2.easeOut
-        },
-        {
-          css: {
-            transform: 'translate3d(0px, '+winHeight+'px, 0px)'
-          },
-          ease: Power2.easeOut
-        }
-      ))
-      .add(TweenMax.fromTo("#slide-2 .always-bottle", .75, {
-          css: {
-            transform: 'translate3d(0px, '+winHeight+'px, 0px)'
-          },
-          ease: Power2.easeOut
-        },
-        {
-          css: {
-            transform: 'translate3d(0px, 0px, 0px)'
-          },
-          ease: Power2.easeOut
-        }
-      ), '-=2')
-      .add(TweenMax.fromTo("#slide-2 .always-bottle", .75, {
-          css: {
-            transform: 'translate3d(0px, 0px, 0px)'
-          },
-          ease: Power2.easeOut
-        },
-        {
-          css: {
-            transform: 'translate3d(0px, -'+winHeight+'px, 0px)'
-          },
-          ease: Power2.easeOut
-        }
-      ), '-=.75');
+      ), '-=2');
     scenes['scene2']
       .setTween(inScene2);
 

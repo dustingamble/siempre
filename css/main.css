@@ -258,7 +258,7 @@ h2.out {
     position: relative;
   }
   #slide-2 .always-text {
-    transform: translate3d(0px, -100%, 0px);
+    transform: translate3d(0px, 0px, 0px);
   }
   #slide-2 .always-bottle {
     transform: translate3d(0px, 100%, 0px);
