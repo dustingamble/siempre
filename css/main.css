@@ -122,6 +122,9 @@ h2 {
   width: 100%;
   height: 100%;
 }
+.slide {
+  transform: translate3d(0, 0, 0);
+}
 section {
 	min-width: 960px;
 	opacity: 0;
