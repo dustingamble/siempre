@@ -23,7 +23,11 @@ select,
 textarea {
     color: #222;
 }
-
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
 body {
     font-size: 1em;
     line-height: 1.4;
@@ -123,7 +127,6 @@ h2 {
   height: 100%;
 }
 .slide {
-  transform: translate3d(0, 0, 0);
 }
 section {
 	min-width: 960px;
@@ -418,6 +421,27 @@ img.siempreLogo {
 
 .ibg-bg {
   position: fixed;
+}
+
+/* non-Retina-specific stuff here */
+@media
+not screen and (-webkit-min-device-pixel-ratio: 2),
+not screen and (   min--moz-device-pixel-ratio: 2),
+not screen and (     -o-min-device-pixel-ratio: 2/1),
+not screen and (        min-device-pixel-ratio: 2),
+not screen and (                min-resolution: 192dpi),
+not screen and (                min-resolution: 2dppx) {
+
+  .bcg,
+  .ibg-bg {
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: static;
+  }
+
 }
 
 #first {
